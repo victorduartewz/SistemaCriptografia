@@ -1,75 +1,75 @@
-# 🔒 Sistema de Criptografia e Descriptografia 
+# 🔒 Encryption and Decryption System
 
-Este projeto implementa um sistema cliente-servidor que permite criptografar e descriptografar mensagens utilizando métodos de criptografia **padrão**, **simétrica** e **assimétrica**. Ele também demonstra conceitos de redes, sockets e segurança de dados.
+This project implements a client-server system that allows encrypting and decrypting messages using **padrão**, **simétrica** and **assimétrica** encryption methods. It also demonstrates concepts of networking, sockets and data security.
 
-## 🚀 Objetivo
+## 🚀 Objective
 
-Fornecer um ambiente interativo para aprendizado e prática de técnicas de criptografia e manipulação de mensagens em um sistema distribuído.
+Provide an interactive environment for learning and practicing encryption techniques and message handling in a distributed system.
 
-## 🛠️ Estrutura do Repositório
+## 🛠️ Repository Structure
 
 ```bash
 📂 SistemaCriptografia/
 │
-├── cliente.py   # Código do cliente para interagir com o servidor
-├── servidor.py  # Código do servidor para processar as mensagens
-└── README.md    # Documentação do projeto
+├── cliente.py   # Client code to interact with the server
+├── servidor.py  # Server code to process messages
+└── README.md    # Project documentation
 ```
 
-## 📚 Funcionalidades
+## 📚 Features
 
-### Cliente
-- Conecta-se ao servidor por meio de um socket TCP.
-- Permite ao usuário:
-  - Criptografar mensagens.
-  - Descriptografar mensagens.
-  - Escolher o tipo de criptografia: padrão, simétrica ou assimétrica.
-- Envia os dados ao servidor e exibe os resultados retornados.
+### Client
+- Connects to the server via a TCP socket.
+- Allows the user to:
+  - Encrypt messages.
+  - Decrypt messages.
+  - Choose the encryption type: padrão, simétrica, or assimétrica.
+- Sends data to the server and displays the returned results.
 
-### Servidor
-- Recebe mensagens do cliente e processa as operações de criptografia/descriptografia.
-- Implementa:
-  - **Criptografia padrão:** Deslocamento fixo nos caracteres.
-  - **Criptografia simétrica:** Deslocamento baseado em uma chave fornecida pelo usuário.
-  - **Criptografia assimétrica:** Usa chaves RSA geradas dinamicamente.
-- Responde ao cliente com o resultado e um relógio lógico.
+### Server
+- Receives messages from the client and performs encryption/decryption operations.
+- Implements:
+  - **Padrão encryption:** Fixed character offset.
+  - **Simétrica encryption:** Offset based on a user-provided key.
+  - **Assimétrica encryption:** Uses dynamically generated RSA keys.
+- Responds to the client with the result and a logical clock.
 
-## 🔧 Tecnologias Utilizadas
+## 🔧 Technologies Used
 
 - **Python 3.x**
-- **Biblioteca `socket`:** Para comunicação cliente-servidor.
-- **Biblioteca `cryptography`:** Para criptografia assimétrica.
-- **Threads:** Para suporte a múltiplos clientes simultâneos.
+- **Library `socket`:** For client-server communication.
+- **Library `cryptography`:** For asymmetric encryption.
+- **Threads:** To support multiple simultaneous clients.
 
-## 🏁 Como Executar
+## 🏁 How to Run
 
-### Pré-requisitos
-- Certifique-se de ter o Python 3.x instalado.
-- Instale a biblioteca `cryptography`:
+### Prerequisites
+- Make sure you have Python 3.x installed.
+- Install the library `cryptography`:
   ```bash
   pip install cryptography
   ```
 
-### Passo a Passo
-1. Clone o repositório:
+### Step-by-Step
+1. Clone the repository:
    ```bash
-   git clone https://github.com/SeuUsuario/SistemaCriptografia.git
+   git clone https://github.com/victorduartewz/SistemaCriptografia.git
    cd SistemaCriptografia
    ```
 
-2. Inicie o servidor:
+2. Start the servidor:
    ```bash
    python servidor.py
    ```
 
-3. Em outro terminal, inicie o cliente:
+3. In another terminal, start the cliente:
    ```bash
    python cliente.py
    ```
 
-4. Siga as instruções interativas do cliente para criptografar ou descriptografar mensagens.
+4. Follow the interactive instructions in the cliente to encrypt or decrypt messages.
 
-## 💻 Exemplo de Uso
+## 💻 Usage Example
 
 ### Cliente
 ```text
@@ -93,16 +93,16 @@ Conectado a ('192.168.43.7', 54567)
 Desconectado de ('192.168.43.7', 54567)
 ```
 
-## 🔒 Métodos de Criptografia
+## 🔒 Encryption Methods
 
-- **Padrão:** Desloca cada caractere da mensagem por um valor fixo (3).
-- **Simétrica:** Desloca os caracteres com base em uma chave fornecida.
-- **Assimétrica:** Utiliza chaves públicas e privadas geradas dinamicamente.
+- **Padrão:** Shifts each character in the message by a fixed amount (3).
+- **Simétrica:** Shifts characters based on a provided key.
+- **Assimétrica:** Uses dynamically generated public and private keys.
 
-## 📝 Licença
+## 📝 License
 
-Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+This project is licensed under the MIT License. See the [LICENSE] file for more details.
 
-## 🤝 Contribuições
+## 🤝 Contributions
 
-Contribuições são bem-vindas! Abra _issues_ para relatar problemas ou sugerir melhorias.
+Contributions are welcome! Please open _issues_ to report problems or suggest improvements.
