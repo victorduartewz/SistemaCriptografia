@@ -106,4 +106,3 @@ Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](L
 ## 🤝 Contribuições
 
 Contribuições são bem-vindas! Abra _issues_ para relatar problemas ou sugerir melhorias.
-```
